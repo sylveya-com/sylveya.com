@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylveya</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Sylveya is a competitive PvP Minecraft server with arenas, kits, and ranked matchmaking.">
+    <link rel="canonical" href="https://sylveya.com/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Sylveya">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sylveya">
+    <meta property="og:description" content="Sylveya is a competitive PvP Minecraft server with arenas, kits, and ranked matchmaking.">
+    <meta property="og:url" content="https://sylveya.com/">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sylveya">
+    <meta name="twitter:description" content="Sylveya is a competitive PvP Minecraft server with arenas, kits, and ranked matchmaking.">
+    <meta name="twitter:url" content="https://sylveya.com/">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Sylveya" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animations CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">Sylveya</a>
+            <div class="nav-links">
+                <a href="#info">Info</a>
+                <a href="#funding">Support</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container hero-content">
+            <h1 data-aos="zoom-in" data-aos-duration="1000">
+                Competitive Duels.<br><span class="gradient-text">Rise to the Top.</span>
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="200" class="hero-desc">
+                Fight in competitive PvP arenas with custom kits,<br>
+                ranked matchmaking, and exclusive cosmetics.
+            </p>
+
+            <div class="btn-copy" onclick="copyIp()" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-regular fa-copy"></i>
+                <span id="ip-text">sylveya.com</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVER INFO -->
+    <section id="info">
+        <div class="container">
+            <div class="section-header" data-aos="fade-right">
+                <h2>Server Information</h2>
+                <p>Sylveya is a competitive PvP server with custom arenas, kits, and ranked matchmaking.</p>
+            </div>
+
+            <div class="spotlight-group" id="spotlight-grid">
+
+                <div class="card bento-wide" data-aos="fade-up">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div>
+                            <h3>Competitive PvP</h3>
+                            <p>Fight in duel arenas with premade or custom kits and balanced gameplay.<br>
+                            Ranked matchmaking and leaderboards.<br>
+                            <span class="sub-text">Practice mode available for all players.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-map"></i></div>
+                        <h3>Arenas</h3>
+                        <p>Multiple unique arenas with different layouts.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-inner"></div>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Hardware</h3>
+                        <p>Hosted on NVMe storage for lag-free gameplay. Automated payment infrastructure.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNDING & REWARDS -->
+    <section id="funding" class="funding-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-right">
+                <h2>Donations</h2>
+                <p>Support the server and unlock exclusive cosmetic features.</p>
+            </div>
+
+            <div class="funding-grid">
+
+                <!-- LEFT: Cost & Risk -->
+                <div class="funding-box" data-aos="fade-right">
+                    <h3 class="box-title">Operational Costs</h3>
+                    <p class="text-muted">The server hosting costs $5 a month. Extra funds go toward additional features and development.</p>
+
+                    <div class="warning-box">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <strong>Shutdown Policy:</strong><br>
+                        If the server goes unpaid, it will automatically shut down.
+                    </div>
+
+                    <!-- KO-FI BUTTON -->
+                    <a href="https://ko-fi.com/lokspel" target="_blank" class="btn-kofi" rel="noopener">
+                          <i class="fa-solid fa-mug-hot"></i> Support on Ko-fi
+                    </a>
+                </div>
+
+                <!-- RIGHT: Donation Rewards -->
+                <div class="funding-box" data-aos="fade-left">
+                    <h3 class="box-title">Donation Rewards</h3>
+
+                    <div class="reward-item">
+                        <div class="reward-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div>
+                            <h4 class="reward-title">Premium</h4>
+                            <p class="reward-desc">Armor Trim Cosmetics, Multiple Armor Materials &amp; Patterns, 1 Custom Shield Layout, Nickname Access, Fly in Lobby.</p>
+                            <span class="badge">$5.00</span>
+                        </div>
+                    </div>
+
+                    <div class="reward-item">
+                        <div class="reward-icon"><i class="fa-solid fa-star"></i></div>
+                        <div>
+                            <h4 class="reward-title">Supreme</h4>
+                            <p class="reward-desc">Everything from Premium, All Shield Layouts, Death Effects, Lobby Cosmetics, Custom Nickname Queue, Hosting, Extended Cosmetic Access, Fly in Lobby.</p>
+                            <span class="badge">$10.00</span>
+                        </div>
+                    </div>
+
+                    <div class="claim-instructions">
+                        <p><strong>How to claim:</strong> Support via Ko-fi, then email <a href="mailto:support@sylveya.com" class="email-link">support@sylveya.com</a> with your receipt and desired rank.</p>
+
+                        <div class="code-block">
+                            Email Format:<br>
+                            - Receipt for the donation:<br>
+                            - Desired rank (Premium / Supreme):<br>
+                            - Your Minecraft username:
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact & Community</h2>
+                <p>Join the discussion, find a clan, or contact the operator.</p>
+            </div>
+
+           <p class="contact-label">Operator Email:</p>
+            <a href="mailto:support@sylveya.com" class="big-email">
+                support@sylveya.com
+            </a>
+
+            <!-- SOCIAL GRID -->
+            <div class="social-grid">
+
+                <a href="/discord.html" target="_blank" class="social-card discord" data-aos="fade-up" data-aos-delay="100" rel="noopener">
+                    <i class="fa-brands fa-discord"></i>
+                    <div class="social-info">
+                        <h3>Discord Community</h3>
+                        <p>Join the server chat and voice channels.</p>
+                    </div>
+                </a>
+
+                <a href="https://t.me/sylveya" target="_blank" class="social-card telegram" data-aos="fade-up" data-aos-delay="200" rel="noopener">
+                    <i class="fa-brands fa-telegram"></i>
+                    <div class="social-info">
+                        <h3>Telegram</h3>
+                        <p>Get updates and chat with the community.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/@mishacantstream" target="_blank" class="social-card youtube" data-aos="fade-up" data-aos-delay="300" rel="noopener">
+                    <i class="fa-brands fa-youtube"></i>
+                    <div class="social-info">
+                        <h3>YouTube Channel</h3>
+                        <p>Subscribe for updates and server events.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sylveya. Not affiliated with Mojang.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-check-circle" style="color: #10b981;"></i>
+        IP Copied: sylveya.com
+    </div>
+
+    <!-- AOS JS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at https://mozilla.org/MPL/2.0/.
+    -->
+</body>
+</html>
